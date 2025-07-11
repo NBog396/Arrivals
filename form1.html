@@ -1,18 +1,31 @@
-<p>Arrival Inspection</p>
+<h1>Arrival Inspection</h1>
 
-<form>
- <p>  <label for="DATE">Date:</label><br>
-  <input type="text" id="DATE" name="DATE"><br>
+<form id="feedback">
+  <p>
+    <label>Date:
+    <input name="Date" type="text" size="20" /> <br> Name:
+    <input name="Name" type="text" size="20" />
+  </label>
 
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name">
-    </p> 
+      <label>Name:
+    <input name="name" type="text" size="20" /> <br> E-mail Addres:
+    <input name="email" type="email" size="20" />
+  </label>
 
- <p>
-   <input type="radio" id="adesa" name="location" value="adesa">
-  <label for="adesa">Adesa</label><br>
-  <input type="radio" id="office" name="location" value="office">
-  <label for="office">Office</label><br>
-    </p> 
+    <p>
+      <strong>Things you like on my site:</strong> <br>
 
+      <label>Site design
+<input name="Design" class="thingslike" type="checkbox" /></label>
+      <br>
+      <label>Contents
+<input name="Contents" class="thingslike" type="checkbox" /></label>
+      <br>
+      <label>Ease of use
+<input name="Ease of use" class="thingslike" type="checkbox" /></label>
+      <br>
+      <input type="submit" value="Submit Your Entries" />
+      <input type="reset" value="Clear Your Entries" />
 </form>
+
+<div id="res"></div>
